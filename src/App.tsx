@@ -1,13 +1,13 @@
-import { useState } from 'react'
+
 
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const pokemonNames = ["pikachu", "clefairy", "jigglypuff","squirtle", "bulbasaur"]
   return (
       <div>
-        
+        {pokemonNames.map(pokemon => 
+          <button>{pokemon}</button>)}
       </div>
   )
 }
